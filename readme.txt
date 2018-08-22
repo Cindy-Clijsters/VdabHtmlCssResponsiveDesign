@@ -1,0 +1,1 @@
+This is a Responsive Design (Mobile First) project from the VDAB course HTML/CSS
