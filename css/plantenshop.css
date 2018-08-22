@@ -87,3 +87,22 @@ header h1 {
     color: white;
     background-color: darkseagreen;
 }
+
+/* Helper classes */
+
+.phone-only {
+    display: block;
+}
+
+.klein-tablet {
+    display: none;
+}
+
+.groter-tablet {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
