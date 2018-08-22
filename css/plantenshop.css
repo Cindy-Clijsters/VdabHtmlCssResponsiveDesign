@@ -52,4 +52,38 @@ header h1 {
     margin: 0;
 }
 
+/********** HEADER MENU MOBILE FIRST **********/
 
+/* Vertical menu - container determinates width of list */
+
+#hoofdmenu {
+    list-style: none;
+    font-size: 0.875em;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 1em;
+    width: auto;
+}
+
+#hoofdmenu li {
+    display: block;
+    margin: 0;
+    padding: 0.4286em 1.1428em;
+    border-bottom: 1px solid silver;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+}
+
+#hoofdmenu li:first-child {
+    border-top: 1px solid silver;
+}
+
+#hoofdmenu a {
+    display: inline;
+    cursor: pointer;
+}
+
+#hoofdmenu li:hover {
+    color: white;
+    background-color: darkseagreen;
+}
