@@ -136,3 +136,14 @@ header h1 {
     display: none;
 }
 
+/* TABLETS */
+
+@media screen and (min-width: 480px) {
+    
+}
+
+/* DESKTOPS */
+
+@media screen and (min-width: 780px) {
+    
+}
