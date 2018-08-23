@@ -282,4 +282,134 @@ header h1 {
 
 @media screen and (min-width: 780px) {
     
+    /* Title on top
+    all items next to each other: totaal = + border
+    bigger header, title beneath menu
+    */
+    
+    .phone-only {
+        display: none;
+    }
+    
+    .klein-tablet {
+        display: block;
+    }
+    
+    .bigger-tablet {
+        display: block;
+    }
+    
+    .desktop {
+        display: block;
+    }
+    
+    .container {
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        height: 100%;
+    }
+    
+    header {
+        height: 10em;
+    }
+    
+    header h1 {
+        font-size: 2.5em;
+        margin: 0;
+        position: static;
+    }
+    
+    #inhoud h2 {
+        font-size: 1.375em;
+    }
+    
+    #kopnav {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+    /* two columns layout  (25% + 72% = 99 %)*/
+    
+    aside {
+        float: left;
+        width: 25%;
+        padding: 0 1%;
+    }
+    
+    .kolom {
+        float: left;
+        width: 72%;
+        padding: 0 0 1em 0;
+    }
+    
+    p {
+        margin: 0;
+    }
+    
+    #hoofdmenu li:nth-child(1n+0) {   
+        /* :nth-child(1n+0) dient enkel om specifiteit te verhogen (anders word deze overschreven)
+        - de specificiteit van de 320px MQ #hoofdmenu li:nth-child(4) is 0 1 1 1
+        - de specificiteit van de 800px MQ #hoofdmenu li is slechts 0 1 0 1
+        - de specificiteit van de 800px MQ #hoofdmenu li:nth-child(1n+0) is 0 1 1 1
+        */ 
+        width: 16.4%;
+        padding: 0.3em 0;
+        border-top: 1px solid lavenderblush;
+        border-right: 1px solid lavenderblush;
+        border-bottom: none;
+        border-left: none;
+        text-align: center;
+    }
+    
+    #hoofdmenu li:first-child {
+        border-left: 1px solid lavenderblush;
+    }
+    
+    /* thumbnail list */
+    .thumbnaillist {
+        padding: 0;
+        overflow: auto;        
+    }
+    
+    .thumbnaillist li {
+        float: left;
+        width: 48%;
+        height: 36em;
+        padding: 0;
+    }
+    
+    .thumbnaillist h4 {
+        position: static;
+        color: darkgreen;
+        margin: 0;
+        padding: 5px 0 0 0;
+        width: 100%;
+    }
+    
+    .thumbnaillist img {
+        float: none;
+        margin: 0;
+        max-width: 90%;
+        border: 5px solid snow;
+        border-radius: 0.2em;
+    }
+    
+    
+    /* DESKTOPS (BIG SCREENS) */
+    
+    @media screen and (min-width: 960px) {
+        
+        .thumbnaillist li {
+            width: 31%;
+        }
+        
+        .thumbnaillist img {
+            max-width: 95%;
+        }
+        
+    }
 }
