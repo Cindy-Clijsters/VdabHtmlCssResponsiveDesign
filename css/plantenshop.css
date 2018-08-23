@@ -218,6 +218,42 @@ header h1 {
         background-color: darkslategray;
     }
     
+    /* thumbnaillist
+       no bullets, image visible, title on top op image, first text visible
+    */
+    
+    .thumbnaillist li {
+        position: relative;
+        background: none;
+        border: none;
+        padding: 1%;
+        margin: 1%;
+        overflow: hidden;
+        height: 6.333333em;
+    }
+    
+    .thumbnaillist h4 {
+        position: absolute;
+        bottom: 0.2em;
+        left: 0.2em;
+        display: block;
+        margin-left: 0.4em;
+        color: #00FFFFFF;
+        width: 38%;
+    }
+    
+    .thumbnaillist img{
+        display: inline-block;
+        float: left;
+        margin-right: 0.5em;
+        max-width: 40%;
+        min-width: 10em;
+    }
+    
+    .thumbnaillist p {
+        margin: 0;
+    }
+    
 }
 
 /* DESKTOPS */
